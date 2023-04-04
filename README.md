@@ -94,7 +94,3 @@ cyclistic_df %>% group_by(day_of_week) %>%
                list(time = mean))
 # Exporting the data
 write.csv(cyclistic_df, "D:\\Data Analysis\\Google\\G8\\Case_study_1\\cyclistics_df.csv", row.names=FALSE)
-# Visualizing the data using ggpolt2
-ggplot(cyclistic_df, aes(x = rideable_type, y = ride_id)) + 
-  geom_bar(stat = "identity", fill = "blue") +
-  labs(title = "Total Count of Rideable Type", x = "Rideable Type", y = "Number of Rides")
